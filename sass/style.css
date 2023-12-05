@@ -1,0 +1,24 @@
+.fix::before, fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu ul {
+  background-color: aqua;
+  list-style: none;
+}
+.menu ul li {
+  margin: 10px 20px;
+  display: inline-block;
+}
+.menu ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s;
+}
+.menu ul li a:hover {
+  color: #fff;
+  background-color: blueviolet;
+}/*# sourceMappingURL=style.css.map */
