@@ -154,8 +154,37 @@ const productGrid = (document.querySelector(".js-products-grid").innerHTML =
   productHTML);
 
 function handleCartFunction(btnElement) {
+  const productId = btnElement.dataset.productId;
   const productName = btnElement.dataset.productName;
+  // let cartItem = cart.find((sameItem) => sameItem.productName === productName);
+  let item;
+  cart.forEach((sameItem) => {
+    if (sameItem.productId === productId) {
+      item = sameItem;
+    }
+  });
 
+  if (item) {
+    item.quantity++;
+  } else {
+    cart.push({
+      productName: productName,
+      productId: productId,
+      quantity: 1,
+    });
+  }
+
+  console.log(item);
+
+  // if (cartItem) {
+  //   cartItem.quantity++;
+  //   console.log("cartItem", cartItem);
+  // } else {
+  //   cart.push({
+  //     productName: productName,
+  //     quantity: 1,
+  //   });
+  // }
   console.log(cart);
 }
 
