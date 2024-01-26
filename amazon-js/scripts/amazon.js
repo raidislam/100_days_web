@@ -85,7 +85,6 @@ function handleCartFunction(btnElement) {
 // addEventListener to Button
 
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
-  console.log(button);
   button.setAttribute("type", "button");
   button.addEventListener("click", () => handleCartFunction(button));
 });
