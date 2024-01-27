@@ -52,7 +52,7 @@ cart.forEach((cartItem) => {
             type="radio"
             checked
             class="delivery-option-input"
-            name="delivery-option-1"
+            name="delivery-option-2"
           />
           <div>
             <div class="delivery-option-date">Tuesday, June 21</div>
